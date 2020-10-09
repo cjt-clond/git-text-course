@@ -1,0 +1,16 @@
+title: git-text
+description: 本仓库用于存储git学习资源
+template:
+  repo: git-text-template
+  name: git-text
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
